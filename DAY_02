@@ -1,0 +1,10 @@
+#Give an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the array except the one at i 
+n=list(map(int,input().split()))
+l=[]
+for i in n:
+	m=1
+	for j in n:
+		if i!=j:
+			m=m*j
+	l.append(m)
+print(l)
