@@ -1,0 +1,4 @@
+#Day 04
+#your function should convert number to a string and add comma as a thousand separator
+n=int(input())
+print(f"{n:,d}")
