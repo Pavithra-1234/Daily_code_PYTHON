@@ -1,0 +1,8 @@
+##Day 08
+#implement an autocomplete system that is a query string 's' and set of all the possible query string ,return all the string in the set that have 's' as a perfix
+n=list(map(str,input().split()))
+b=print(n)
+m=input()
+for i in n:
+     if m[0]==i[0] and m[1]==i[1] :
+         print(i)
