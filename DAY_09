@@ -1,0 +1,16 @@
+#Day 09
+#Disarium number or not 
+n=int(input())
+m=len(str(n))
+sum=0
+temp=n
+rem=0
+while(temp>0):
+	rem=temp%10
+	sum=sum+int(rem**m)
+	temp=temp//10
+	m=m-1
+if(sum==n): 
+	print('True')
+else: 
+	print('False')
