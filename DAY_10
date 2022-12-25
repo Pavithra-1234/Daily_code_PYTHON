@@ -1,0 +1,15 @@
+#Day 10
+#There exists a staircase with N steps and you can climb up with either 1 or 2 steps at a time.Write a function that return number of unique ways we can climb (n=2,o/p =2),(n=4,o/p=5)
+a=int(input())
+b=1
+c=2
+if a==1:
+    print(b)
+elif a==2:
+    print(c)
+else:
+    for i in range(3,a+1):
+        d=b+c
+        b=c
+        c=d
+    print(d)
